@@ -59,13 +59,10 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i>Minhas consultas <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="consulta.html">Consultas/a></li>
-                      
+                      <li><a href="consulta.html">Consultas</a></li>
                     </ul>
                   </li>
-                  <li><a href="historico.html"><i class="fa fa-desktop"></i> Histórico <span class=".."></span></a>
-                  </li>
-                  <li><a><i class="fa fa-table"></i> Score <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="historico.html"><i class="fa fa-desktop"></i> Histórico </a>
                   </li>
                   <li><a><i class="fa fa-bar-chart-o"></i> Pontos e Experiências <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -287,6 +284,13 @@
 
     <!-- Custom Theme Scripts -->
     <script src="build/js/custom.min.js"></script>
+    <script type="text/javascript" src="js/connection.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        login("16058328713","86517295");
+        consulta("especialidade", undefined, ['nome like %sta', 'id > 1']);
+      });
+    </script>
 
   </body>
 </html>
